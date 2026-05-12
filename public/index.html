@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Binu's Dental Clinic | Luxury Dentistry in Coimbatore</title>
+    <meta name="description" content="Dr. Binu's Dental Clinic in Gandhipuram, Coimbatore. Exceptional dentistry with a personal touch. Rated 4.7/5.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- SEO / Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dr. Binu's Dental Clinic",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Sivananda Colony, Gandhipuram",
+        "addressLocality": "Coimbatore",
+        "addressRegion": "TN",
+        "postalCode": "641012",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91XXXXXXXXXX",
+      "url": "http://localhost:3000",
+      "rating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "6"
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/compact-services.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <div class="top-bar">
+            <div class="social-links">
+                <a href="https://wa.me/91XXXXXXXXXX" target="_blank" title="WhatsApp Us"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="lang-toggle" onclick="toggleLanguage()">TA / EN</a>
+            </div>
+            <div class="contact-info">
+                <a href="tel:+91XXXXXXXXXX" class="phone"><i class="fas fa-phone-alt"></i> Click to Call</a>
+                <span class="address"><i class="fas fa-map-marker-alt"></i> Sivananda Colony, Gandhipuram, Coimbatore</span>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home">
+                    <img src="images/logo.png" alt="Dr. Binu's Dental Clinic Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Smile Gallery</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#patient-info" data-i18n="nav-patient">Patient Info</a></li>
+            </ul>
+            <a href="#booking" class="btn btn-primary cta-btn">Schedule an Appointment</a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section (Full Screen Layout) -->
+    <section id="home" class="hero fullscreen fade-in">
+        <div class="hero-content">
+            <h1 class="slide-up">Exceptional dentistry with a personal touch.</h1>
+            <p class="slide-up delay-1">Your 24/7 Salesperson: We turn first-time visitors into first-time patients through trust and excellence.</p>
+            <div class="hero-buttons slide-up delay-2">
+                <a href="#booking" class="btn btn-gold">Schedule an Appointment</a>
+                <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-outline" target="_blank">WhatsApp Us</a>
+                <a href="#booking" class="btn btn-primary">Enquire Now</a>
+            </div>
+            <div class="trust-signals slide-up delay-3">
+                <div class="trust-item"><i class="fas fa-star"></i> 4.7/5 Rated on Justdial</div>
+                <div class="trust-item"><i class="fas fa-users"></i> 6+ Satisfied Patients</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-light">
+        <div class="container fade-in">
+            <div class="section-header">
+                <h2>Our Featured Services</h2>
+                <p>Exceptional dental care using state-of-the-art technology and materials.</p>
+            </div>
+            <div class="grid services-grid">
+                <div class="card service-card zoom-in">
+                    <i class="fas fa-microscope icon-gold"></i>
+                    <h3>Root Canal Treatment</h3>
+                    <p>Advanced, painless root canal procedures using the latest endodontic technology.</p>
+                </div>
+                <div class="card service-card zoom-in delay-1">
+                    <i class="fas fa-crown icon-gold"></i>
+                    <h3>Dental Crowns</h3>
+                    <p>Premium crowns in Ceramic, Zirconia, and Metal for maximum durability and aesthetics.</p>
+                </div>
+                <div class="card service-card zoom-in delay-2">
+                    <i class="fas fa-tooth icon-gold"></i>
+                    <h3>Dental Implants</h3>
+                    <p>Permanent, natural-looking tooth replacement solutions for a confident smile.</p>
+                </div>
+                <div class="card service-card zoom-in delay-3">
+                    <i class="fas fa-pills icon-gold"></i>
+                    <h3>Tooth Extraction</h3>
+                    <p>Gentle and efficient surgical and simple extractions with expert care.</p>
+                </div>
+
+                <!-- Other Services Card (Visible) -->
+                <div class="card service-card zoom-in delay-4 other-services-card">
+                    <h3>Other Premium Services</h3>
+                    <div class="service-underline"></div>
+                    <ul class="other-services-list-compact">
+                        <li><i class="fas fa-check"></i> Consultation (₹100+)</li>
+                        <li><i class="fas fa-check"></i> Scaling & Planing</li>
+                        <li><i class="fas fa-check"></i> Fillings</li>
+                    </ul>
+                    <button id="showMoreBtn" class="btn btn-outline small-btn" style="margin-top: 1.5rem;">Show More <i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <!-- Extra Treatments Card (Hidden initially, appears on the right) -->
+                <div id="extraTreatmentsCard" class="card service-card zoom-in other-services-card extra-card" style="display: none;">
+                    <h3>Additional Treatments</h3>
+                    <div class="service-underline"></div>
+                    <ul class="other-services-list-compact">
+                        <li><i class="fas fa-check"></i> Gingivectomy</li>
+                        <li><i class="fas fa-check"></i> Veneers</li>
+                        <li><i class="fas fa-check"></i> Zirconia Crowns</li>
+                        <li><i class="fas fa-check"></i> Kids Treatment</li>
+                        <li><i class="fas fa-check"></i> RPD & Dentures</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smile Gallery Section -->
+    <section id="gallery" class="section bg-dark">
+        <div class="container fade-in">
+            <div class="section-header text-white">
+                <h2>Smile Gallery</h2>
+                <p>Real results from our patients.</p>
+            </div>
+            <div class="gallery-wrapper">
+                <div class="gallery-item slide-up">
+                    <img src="images/smile.png" alt="Before and After Smile" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Porcelain Veneers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="section bg-light">
+        <div class="container fade-in">
+            <div class="section-header">
+                <h2>Meet the Doctors</h2>
+                <p>Exceptional care from our dedicated specialists.</p>
+            </div>
+            <div class="team-grid">
+                <!-- Doctor 1 -->
+                <div class="card doctor-card zoom-in">
+                    <div class="doctor-photo-box">
+                        <img src="images/dentist.png" alt="Dr. Binu" loading="lazy">
+                    </div>
+                    <div class="doctor-details">
+                        <h3>Dr. Binu</h3>
+                        <p class="specialty">Principal Dentist & Surgeon</p>
+                        <p class="bio">Expert in Advanced Oral Surgery & Cosmetic Care.</p>
+                    </div>
+                </div>
+                <!-- Doctor 2 -->
+                <div class="card doctor-card zoom-in delay-1">
+                    <div class="doctor-photo-box">
+                        <img src="images/dentist.png" alt="Doctor 2" loading="lazy">
+                    </div>
+                    <div class="doctor-details">
+                        <h3>Dr. Anitha</h3>
+                        <p class="specialty">Endodontist</p>
+                        <p class="bio">Specialist in Root Canal Treatments & Pain Management.</p>
+                    </div>
+                </div>
+                <!-- Doctor 3 -->
+                <div class="card doctor-card zoom-in delay-2">
+                    <div class="doctor-photo-box">
+                        <img src="images/dentist.png" alt="Doctor 3" loading="lazy">
+                    </div>
+                    <div class="doctor-details">
+                        <h3>Dr. Rahul</h3>
+                        <p class="specialty">Orthodontist</p>
+                        <p class="bio">Designing perfect smiles through advanced orthodontics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section bg-white">
+        <div class="container fade-in">
+            <div class="section-header">
+                <h2>Patient Stories</h2>
+                <p>Don't just take our word for it.</p>
+            </div>
+            <div class="testimonial-slider slide-up">
+                <div class="testimonial active">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"The most luxurious and pain-free dental experience I've ever had. Dr. Sterling is an artist."</p>
+                    <h4>- Emma R.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Patient & FAQ Section -->
+    <section id="patient-info" class="section bg-light">
+        <div class="container grid dual-grid fade-in">
+            <div class="info-block slide-right">
+                <h2>New Patient Information</h2>
+                <p>Your first visit to Aura Dental is about understanding your unique needs and designing a tailored care plan.</p>
+                <ul class="info-list">
+                    <li><i class="fas fa-check-circle"></i> Comprehensive digital scan</li>
+                    <li><i class="fas fa-check-circle"></i> Personalized smile consultation</li>
+                    <li><i class="fas fa-check-circle"></i> Flexible financing options available</li>
+                </ul>
+                <a href="#" class="btn btn-outline">Download Intake Forms</a>
+            </div>
+            <div class="faq-block slide-left" id="faq">
+                <h2>Frequently Asked Questions</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">Do you accept insurance?</button>
+                        <div class="accordion-content">
+                            <p>We accept most major PPO insurances and offer an in-house membership plan for patients without insurance.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">How long does teeth whitening take?</button>
+                        <div class="accordion-content">
+                            <p>Our in-office laser whitening takes about 60 minutes and can brighten your smile by up to 8 shades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Booking / Contact Section -->
+    <section id="booking" class="section bg-dark booking-section">
+        <div class="container grid dual-grid fade-in">
+            <div class="contact-details text-white slide-right">
+                <h2>Contact Us</h2>
+                <p>Ready to transform your smile? Reach out today.</p>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Address</h4>
+                        <p>Sivananda Colony, Gandhipuram,<br>Coimbatore, Tamil Nadu 641012</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>(555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Hours</h4>
+                        <p>Mon - Fri: 8am - 6pm<br>Sat: 9am - 2pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="booking-form-wrapper slide-left">
+                <form id="bookingForm" class="booking-form">
+                    <h3>Schedule an Appointment</h3>
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" required>
+                            <option value="">Select a Service</option>
+                            <option value="consultation">General Consultation (from ₹100)</option>
+                            <option value="root-canal">Root Canal Treatment</option>
+                            <option value="crowns">Dental Crowns (Ceramic/Zirconia/Metal)</option>
+                            <option value="implants">Dental Implants</option>
+                            <option value="extraction">Tooth Extraction</option>
+                            <option value="scaling">Scaling & Root Planing</option>
+                            <option value="fillings">Laser & Traditional Fillings</option>
+                            <option value="gingivectomy">Gingivectomy</option>
+                            <option value="veneers">Veneers</option>
+                            <option value="kids">Kids Treatment</option>
+                            <option value="rpd">RPD (Removable Partial Denture)</option>
+                            <option value="denture">Complete Denture</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-gold full-width">Book Now</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="logo">
+                <img src="images/logo.png" alt="Dr. Binu's Dental Clinic" class="footer-logo">
+            </div>
+            <p>&copy; 2026 Dr. Binu's Dental Clinic. All Rights Reserved.</p>
+            <div class="social-links footer-social">
+                <a href="https://wa.me/91XXXXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
